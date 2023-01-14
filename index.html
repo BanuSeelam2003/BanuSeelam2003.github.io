@@ -163,10 +163,18 @@ model-viewer{
     width: 900px;
     height: 500px;
     border-radius: 5px;
-    border-width: 5px;
-    border-color: #34495e
-    
+    border-width: 50px;
+    border-color: #34495e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.copy{
+  border: none;
+  background-color: none;
+}
+
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
@@ -326,7 +334,7 @@ h1 {
   <div class="logo-img-bgn">
         <img class="rapid-img" src="Charged_Up_Logo.svg.png" width="30%" alt="">
         <p class="dl-text"><a class="dl-link" href="https://firstfrc.blob.core.windows.net/frc2023/Manual/2023FRCGameManual.pdf" target="_blank">Download</a> 2023 Charged Up Manual</p>
-        <p class="dl">Access Code: <button class="copy">#2023ReAcH4th3T0p!</button></p>
+        <p class="dl">Access Code: #2023ReAcH4th3T0p!</p>
     </div>
 
     <!--<p class="intro-text">Rapid React, presented to us by FIRST Inspires for the 2022 Robotics Competition. FIRST teams will explore the future of
@@ -460,6 +468,11 @@ h1 {
             <li>When Idle, it is at a level position</li>
             <li>Light turns on when Charge Station is level</li>
           </ul>
+          <model-viewer src="Charging Station (GE-23300).gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.52" shadow-softness="0.91" exposure="0.57" auto-rotate>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+        </model-viewer>
         </div>
       </div>
     </div>
