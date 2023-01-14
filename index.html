@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+html{
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: cadetblue;
+}
+
+
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+  background-color: #24252a;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.sub_title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+.logo-img-bgn{
+    padding-top: 10px;
+    background-color: white;
+}
+
+.rapid-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+model-viewer{
+    align-self: auto;
+    width: 900px;
+    height: 500px;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: #34495e
+    
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFB600 /*#34495e*/;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion ul{
+  margin-left: 30px;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.intro-text{
+  font-size: 20px;
+  margin: 20px;
+  color: black;
+}
+
+.dfeild-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.point-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.dl{
+  color: black;
+  padding-left: 10px;
+}
+
+.dl-text{
+  color: black;
+
+}
+
+
+.dl-link{
+  text-decoration: none;
+  text-decoration: underline;
+  color: #a7cb0a;
+  padding-left: 10px;
+}
+
+.contact-cont{
+  display: flex;
+  height: 150px;
+  /*width: 50%;
+  margin: 10px;*/
+  align-items: stretch;
+  color: white;
+  background-color: #24252a;
+  text-align: center;
+}
+
+.contact-box{
+  display: block;
+  width: 100%;
+}
+
+.contact-text{
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.contact-btn{
+  text-decoration: none;
+  color: white;
+  background-color:  rgba(0, 136, 169, 1);
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 30px;
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="script" href="scripts.js">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+</head>
+<body>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <div class="logo-img-bgn">
+        <img class="rapid-img" src="Charged_Up_Logo.svg.png" width="30%" alt="">
+        <p class="dl-text"><a class="dl-link" href="https://firstfrc.blob.core.windows.net/frc2023/Manual/2023FRCGameManual.pdf" target="_blank">Download</a> 2023 Charged Up Manual</p>
+        <p class="dl">Access Code: <button class="copy">#2023ReAcH4th3T0p!</button></p>
+    </div>
+
+    <!--<p class="intro-text">Rapid React, presented to us by FIRST Inspires for the 2022 Robotics Competition. FIRST teams will explore the future of
+        transportation. This year, FIRST teams will address today’s global challenges, focused on building resilient infrastructure, promoting inclusive and sustainable
+        industrialization, and fostering innovation. By encouraging FIRST participants to think about future
+        transportation sustainability, we’re also empowering them to be the next generation of leaders and
+        innovators, tackling the world’s toughest challenges.</p>-->
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        Game Overview
+      </div>
+      <div class="accordion-item-body">
+        <div class="accordion-item-body-content">
+          <p class="drop-text">Each team brings energy to their community by retrieving the game pieces from the substations and 
+            scoring it in their grid. Humans will provide the game pieces to the robot from the substations. In the final moments, 
+            alliance robots race to dock or engage with the charge station.
+            <br><br>
+            <li>Total Game Time: 2 minutes 30 seconds</li>
+            <ul>
+                <li>Match begins with a 15-second autonomous period and earn points by:</li>
+                <ul>
+                    <li>Leaving their community,</li>
+                    <li>Retrieving and scoring game pieces onto the grid,</li>
+                    <li>Docking on or engaging with their charge station.</li>
+                </ul>
+                <li>In the final 2 minutes and 15 seconds, drivers take control of robots and score points by:</li>
+                <ul>
+                    <li>Retrieving and scoring game pieces onto the grid,</li>
+                    <li>Docking or engaging charge station</li>
+                </ul>
+            </ul>
+            The alliance with the highest score at the end of the match wins!</p>
+            <img class="dfeild-img" src="Screenshot 2023-01-09 133958.png" alt="">
+        </div>
+      </div>
+    </div>
+    <p class="sub_title">Field<span>&#58;</span></p>
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        Field Overview
+      </div>
+      <div class="accordion-item-body">
+        <div class="accordion-item-body-content">
+          <ul>
+            <li>Field Size approx.: 26ft. 3.5in (~802cm) by 54ft. 3.25in (~1654cm)</li>
+            <li>Field Elements:</li>
+            <ul>
+                <li>3 red GRIDS and 3 blue GRIDS</li>
+                <li>1 red CHARGE STATION and 1 blue CHARGE STATION</li>	
+                <li>1 red Single Substation and 1 blue Single Substation (located along the guardrail)</li>
+                <li>1 red Double Substation and 1 blue Double Substation (located)</li>
+                <li>2 Barriers, 1 separating each community from the opposing alliance’s loading zone</li>	
+            </ul>
+          </ul>
+          <img class="point-img" src="Screenshot 2023-01-09 133958.png" alt="">        
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        Gaurd Rails
+      </div>
+      <div class="accordion-item-body">
+        <div class="accordion-item-body-content">
+            <a href="2022FRCGameManual.pdf#page=33"></a>
+            <ul>
+                <li>Dimension: 1 ft. 8 in. (~51 cm) tall</li>
+                <li>Made of transparent polycarbonate supported by aluminum extrusion</li> 
+                <li>4 gates in the guardrail that are 3ft. 2 in. (~97 cm) wide</li>
+            </ul>
+            <img class="point-img" src="gate view.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        HDPE Cable Protector
+      </div>
+      <div class="accordion-item-body">
+        <div class="accordion-item-body-content">
+          <ul>
+            <li>Dimension: 5 ft. 6in. (~168 cm) long, 7 in. (~18 cm) wide, ⅞ in. (~22 mm) tall, with ~45° ramps</li>
+            <li>Extends from the guardrail on the scoring table side of the FIELD to the center of each Charge Station</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        Area, Zone, Markings
+      </div>
+      <div class="accordion-item-body">
+        <div class="accordion-item-body-content">
+         
+          
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-item-header">
+          Barrier
+        </div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            <ul>
+              <li>Dimensions: 7 ft. 4 in. (~224 cm) long with a base that is 1 ft. 4 in. (~41 cm) wide and ¼ in. (~6 mm) tall</li>
+              <li>Base supports a ½ in. (~13 mm) thick, 1 ft. ¼ in. (~31 cm) tall polycarbonate wall.</li>
+              <li>Separates each COMMUNITY from its adjacent LOADING ZONE.</li>
+            </ul>
+            <model-viewer src="Barrier (GE-23410).gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" camera-orbit="-718.1deg 157.5deg 4.072m" field-of-view="23.37deg">
+              <div class="progress-bar hide" slot="progress-bar">
+                  <div class="update-bar"></div>
+              </div>
+          </model-viewer>
+          </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        Charge Station
+      </div>
+      <div class="accordion-item-body">
+        <div class="accordion-item-body-content">
+          <ul>
+            <li>Dimensions: 8 ft. 1 ¼ in long, 6 ft. 4⅛ in wide, 9⅛ in tall</li>
+            <li>Pivoting Surface of 8ft by 4ft</li>
+            <li>Pivots +/- 15°</li>
+            <li>When Idle, it is at a level position</li>
+            <li>Light turns on when Charge Station is level</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        Alliance Stratagies
+      </div>
+      <div class="accordion-item-body">
+        <div class="accordion-item-body-content">
+          CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images, stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain from which the resource originated.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        Motors
+      </div>
+      <div class="accordion-item-body">
+        <div class="accordion-item-body-content">
+          CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images, stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain from which the resource originated.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="contact-cont">
+      <div class="contact-box">
+        <div class="contact-text">Have any questions, comments, ideas, information that needs to be added and/or desing changes?</div>
+        <div><a  class="contact-btn" href="contact.html" target="_blank">Contact Me</a></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<script>
+
+const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
+    
+    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+    
+    // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+    // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+    //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+    //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    // }
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if(accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    }
+    else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+    
+  });
+});
+
+</script>
+</html>
